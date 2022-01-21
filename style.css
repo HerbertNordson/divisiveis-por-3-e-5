@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  background-color: #000;
+  color: #fff;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  overflow: hidden;
+}
+
+.imageHeader {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1em;
+}
+
+/* MAIN */
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MAIN - FORMULÁRIO */
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 20vh;
+}
+
+form.formulario > label {
+  font-size: 1.4vw;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  color: #ffaa00;
+}
+
+input.inputNum {
+  width: 80%;
+  padding: 0.5em;
+  font-size: 1.2vw;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.error {
+  display: none;
+}
+
+span.error.active {
+  color: #ff0059;
+  font-size: 0.8vw;
+  margin-bottom: 1rem;
+}
+
+button.botEnter,
+button.botReload {
+  background: #ffaa00;
+  color: #ff0059;
+  padding: 0.5em 2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 4px solid #fff;
+  border-radius: 1rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.resultado {
+  text-align: center;
+  font-size: 1.4vw;
+}
+
+.sum {
+  font-size: 4em;
+  color: #fff35c;
+}
+
+.desactive {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+@media (max-width: 780px) {
+  form.formulario {
+    width: 90vw;
+    height: 40vh;
+  }
+  form.formulario > label {
+    font-size: 6vw;
+  }
+  input.inputNum {
+    width: 90%;
+    padding: 1em;
+    font-size: 5vw;
+  }
+  .resultado {
+    font-size: 4vw;
+  }
+  span.error.active {
+    font-size: 2.8vw;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  padding: 0.5em;
+}
+
+footer > ul {
+  display: flex;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  margin: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #ffaa00;
+}
+
+@media (max-width: 780px) {
+  footer {
+    flex-direction: column;
+  }
+}
